@@ -1,0 +1,32 @@
+{
+  "id": "fplus",
+  "name": "fplus",
+  "version": "0.0.1",
+  "description": "Add description",
+  "website": "Add URL",
+  "license": "Not Specified",
+  "dependencies": [
+    {
+      "id": "juce_core",
+      "version": "matching"
+    },
+    {
+      "id": "juce_data_structures",
+      "version": "matching"
+    }
+  ],
+  "include": "fplus.h",
+  "compile": [
+    {
+      "file": "fplus.cpp",
+      "target": "! xcode"
+    },
+    {
+      "file": "fplus.mm",
+      "target": "xcode"
+    }
+  ],
+  "browse": [
+    "fplus/*"
+  ]
+}
